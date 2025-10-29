@@ -41,3 +41,5 @@ services:
         value: "Asia/Bangkok"
       - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
         value: "true"
+      - key: N8N_ENCRYPTION_KEY
+        value: "your_encryption_key"
