@@ -16,7 +16,7 @@ services:
       - key: N8N_BASIC_AUTH_PASSWORD
         value: "yourpassword"
       - key: N8N_HOST
-        value: your-n8n.onrender.com
+        value: "0.0.0.0"
       - key: N8N_PORT
         value: "5678"
       - key: N8N_PROTOCOL
@@ -26,12 +26,18 @@ services:
       - key: DB_POSTGRESDB_HOST
         value: "your_supabase_n8n_host"
       - key: DB_POSTGRESDB_PORT
-        value: "5432"
+        value: "6543"
       - key: DB_POSTGRESDB_DATABASE
         value: "postgres"
       - key: DB_POSTGRESDB_USER
         value: "postgres"
       - key: DB_POSTGRESDB_PASSWORD
         value: "your_supabase_n8n_password"
+      - key: DB_POSTGRESDB_SCHEMA
+        value: "public"
+      - key: DB_SSLMODE
+        value: "require"
       - key: GENERIC_TIMEZONE
         value: "Asia/Bangkok"
+      - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
+        value: "true"
